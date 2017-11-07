@@ -6,6 +6,11 @@ gemspec
 # Load local Gemfile
 load File.expand_path('../Gemfile.local', __FILE__) if File.file? File.expand_path('../Gemfile.local', __FILE__)
 
+# This is a test
+if RUBY_VERSION < '2' && RUBY_PLATFORM.include?('mingw')
+  gem 'ffi', '< 1.9.18'
+end
+
 # Debug aruba
 group :debug do
   if RUBY_VERSION >= '2' && !RUBY_PLATFORM.include?('java')
