@@ -71,7 +71,7 @@ RSpec.describe 'Command Matchers' do
     end
 
     context 'when have output hello world on stderr' do
-      let(:cmd) { "ruby -e 'warn \"#{output}\"'" }
+      let(:cmd) { "ruby -e \"warn '#{output}'\"" }
 
       before(:each) { run_command(cmd) }
 
@@ -95,7 +95,7 @@ RSpec.describe 'Command Matchers' do
     end
 
     context 'when have output hello world on stderr' do
-      let(:cmd) { "ruby -e 'warn \"#{output}\"'" }
+      let(:cmd) { "ruby -e \"warn '#{output}'\"" }
 
       before(:each) { run_command(cmd) }
 
@@ -119,7 +119,7 @@ RSpec.describe 'Command Matchers' do
     end
 
     context 'when have output hello world on stderr' do
-      let(:cmd) { "ruby -e 'warn \"#{output}\"'" }
+      let(:cmd) { "ruby -e \"warn '#{output}'\"" }
 
       before(:each) { run_command(cmd) }
 

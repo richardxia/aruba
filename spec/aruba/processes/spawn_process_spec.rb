@@ -22,7 +22,7 @@ RSpec.describe Aruba::Processes::SpawnProcess do
   end
 
   describe "#stderr" do
-    let(:command) { "ruby -e 'warn \"yo\"'" }
+    let(:command) { "ruby -e \"warn 'yo'\"" }
 
     before(:each) { process.start }
     before(:each) { process.stop }
