@@ -63,7 +63,7 @@ group :development, :test do
   gem 'cucumber', '~> 2.0'
 
   # Make aruba compliant to ruby community guide
-  gem 'rubocop', '~> 0.32', '< 0.41.1'
+  gem 'rubocop', '~> 0.51.0'
 
   # gem 'cucumber-pro', '~> 0.0'
 
