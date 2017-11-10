@@ -18,7 +18,7 @@ group :debug do
     gem 'pry-debugger', '~> 0.2.3'
   end
 
-  gem 'pry-doc', '~> 0.8.0'
+  gem 'pry-doc', '~> 0.11.1'
 end
 
 group :development do
